@@ -4,25 +4,28 @@
     </head>
     <body>
         <div class="container">
-            <div>
+            <div class="scorer">
                 <h3>Home</h3>
                 <h2 id="homescore">0</h2>
                 <div class="incrementers">
-                    <button id="home-1">+1</button>
-                    <button id="home-2">+2</button>
-                    <button id="home-3">+3</button>
+                    <button id="home-1" onclick="add1homepoint()">+1</button>
+                    <button id="home-2" onclick="add2homepoints()">+2</button>
+                    <button id="home-3" onclick="add3homepoints()">+3</button>
                 </div>
             </div>
-            <div>
+            <div class="scorer">
                 <h3>Guest</h3>
                 <h2 id="guestscore">0</h2>
                 <div class="incrementers">
-                    <button id="guest-1">+1</button>
-                    <button id="guest-2">+2</button>
-                    <button id="guest-3">+3</button>
+                    <button id="guest-1" onclick="add1guestpoint()">+1</button>
+                    <button id="guest-2" onclick="add2guestpoints()">+2</button>
+                    <button id="guest-3" onclick="add3guestpoints()">+3</button>
                 </div>
             </div>
         </div>
+        <footer>
+            <button id="reset" onclick="reset()">Start New Game</button>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>
