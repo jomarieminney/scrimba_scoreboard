@@ -84,6 +84,11 @@ footer button{
 
 
 }
+
+.winner{
+    border:2px solid var(--pink)
+}
+
 /* Switch to stacked on mobile */
 @media only screen and (max-width: 768px) {
     .container {
